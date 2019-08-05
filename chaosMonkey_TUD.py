@@ -6,7 +6,7 @@ import time
 
 
 initial = time.time()
-session=boto3.Session(aws_access_key_id="AKIAJO53UHGYI6A7N4CQ",aws_secret_access_key="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",region_name="eu-west-1")
+session=boto3.Session(aws_access_key_id="XXXXXXXXXXXXXXXX",aws_secret_access_key="xxxxxxxxxxxxxxxxxxxxxxxxx",region_name="eu-west-1")
 
 ec2_re_ob=session.resource(service_name='ec2')
 ec2_cli=session.client(service_name="ec2")
@@ -254,7 +254,7 @@ if result == "Passed":
 
     print(testResultStr)
 
-    resultForNotification = "Dave Hill's TUD_CM test PASSED. "+testResultStr
+    resultForNotification = "TUD_CM test PASSED. "+testResultStr
 
 elif result == "Failed":
 
@@ -262,7 +262,7 @@ elif result == "Failed":
 
     print(testResultStr)
 
-    resultForNotification = "Dave Hill's TUD_CM test FAILED. " + testResultStr
+    resultForNotification = " TUD_CM test FAILED. " + testResultStr
 
 else:
 

@@ -8,7 +8,7 @@ import json
 
 
 initial = time.time()
-session=boto3.Session(aws_access_key_id="AKIA3Y4ATIE7VUDM2UPN",aws_secret_access_key="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",region_name="eu-west-1")
+session=boto3.Session(aws_access_key_id="XXXXXXXXXXXXXXXXXX",aws_secret_access_key="xxxxxxxxxxxxxxxxx/KdfLsxFTQUuF/N",region_name="eu-west-1")
 
 ec2_re_ob=session.resource(service_name='ec2')
 ec2_cli=session.client(service_name="ec2")
@@ -249,7 +249,7 @@ print ("Ok BYE")
 
 #TEXT& EMAIL
 
-# session=boto3.Session(aws_access_key_id="AKIAJO53UHGYI6A7N4CQ",aws_secret_access_key="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",region_name="eu-west-1")
+# session=boto3.Session(aws_access_key_id="XXXXXXXXXXXXXXXXXXXXXXXX",aws_secret_access_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",region_name="eu-west-1")
 #
 # ec2_re_ob=session.resource(service_name='ec2')
 # ec2_cli=session.client(service_name="ec2")
@@ -260,8 +260,8 @@ def ActivateLambdaNotifcation(notificationMessage):
     #https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html
     lambdaClient = boto3.client(
         service_name='lambda',
-        aws_access_key_id='AKIA3Y4ATIE7VUDM2UPN',
-        aws_secret_access_key='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',
+        aws_access_key_id='XXXXXXXXXXXXXXXXXXXXX',
+        aws_secret_access_key='xxxxxxxxxxxxxxxxx/KdfLsxFTQUuF/N',
         region_name='eu-west-1'
 
         )

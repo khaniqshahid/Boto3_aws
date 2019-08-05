@@ -1,3 +1,5 @@
+# Following is taken from Dave Hills code. All are here for educational purpose of my.
+
 import boto3
 
 import random

@@ -5,7 +5,7 @@ import random
 
 
 initial = time.time()
-session=boto3.Session(aws_access_key_id="AKIAJO53UHGYI6A7N4CQ",aws_secret_access_key="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",region_name="eu-west-1")
+session=boto3.Session(aws_access_key_id="XXXXXXXXXXXXXXXX",aws_secret_access_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",region_name="eu-west-1")
 
 ec2_re_ob=session.resource(service_name='ec2')
 ec2_cli=session.client(service_name="ec2")

@@ -5,13 +5,11 @@ import time
 
 
 initial = time.time()
-session=boto3.Session(aws_access_key_id="AKIAJO53UHGYI6A7N4CQ",aws_secret_access_key="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",region_name="eu-west-1")
+# Following credentials can be covered up in a another hidden function or use encryption or .. Folowing is for new to understand.
+session=boto3.Session(aws_access_key_id="XXXXXXXXXXXXXXXXXX",aws_secret_access_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",region_name="eu-west-1")
 
 ec2_re_ob=session.resource(service_name='ec2')
 ec2_cli=session.client(service_name="ec2")
-
-
-
 
 
 
@@ -193,9 +191,9 @@ print("\n 2 instances stopped, 2 instances reinstated in ", time.time() - initia
 
 #TEXT& EMAIL
 sns = boto3.client('sns')
-phone_number = '+353879914170'
-# SENDER = "Omer Ismail <omer9992001@gmail.com>"
-# RECIPIENT = "khanshahidiqbal@gmail.com"
+phone_number = '+353999999999'
+# SENDER = "Shahid@dummy.com>"
+# RECIPIENT = "shahidkhan@dublin.com"
 # CONFIGURATION_SET = "ConfigSet"
 # AWS_REGION = "eu-west-1"
 # SUBJECT = "Amazon SES Test (SDK for Python)"
@@ -204,4 +202,4 @@ phone_number = '+353879914170'
 #              "AWS SDK for Python (Boto)."
 #             )
 # CHARSET = "UTF-8"
-sns.publish(Message='Hello Omer 2 instances stopped, 2 instances reinstated ',PhoneNumber=phone_number)
+sns.publish(Message='Hello Shahid 2 instances stopped, 2 instances reinstated ',PhoneNumber=phone_number)
